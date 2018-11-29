@@ -1,3 +1,5 @@
+'use strict';
+
 class TodoApp extends React.Component {
     constructor(props) {
         super(props);
@@ -59,19 +61,7 @@ class TodoApp extends React.Component {
     }
 }
 
-class TodoList extends React.Component {
-    render() {
-        return React.createElement(
-            "ul",
-            null,
-            this.props.items.map(item => React.createElement(
-                "li",
-                { key: item.id },
-                item.text
-            ))
-        );
-    }
-}
+
 
 
 
